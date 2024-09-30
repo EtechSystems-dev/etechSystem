@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+}
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 9, 46);
+    height: 70px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header>p{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: rgb(93, 184, 245);
+}
+
+header>p>a{
+    text-decoration: none;
+    color: rgb(93, 184, 245);
+}
+
+.formBotao1{
+    display: flex;
+    align-items: center;
+}
+
+.botao1{
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(6, 9, 46);
+    color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+.botao1:hover{
+    background-color: rgb(2, 5, 44);
+    color: lightgray;
+    border: solid 3px lightgray;
+}
+
+.botao1:active{
+    background-color: white;
+    color: rgb(6, 9, 46);
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    background-color: white;
+    color: rgb(6, 9, 46);
+    font-size: 20px;
+}
+
+.menu1>a{
+    text-decoration: none;
+    color: rgb(6, 9, 46);
+}
+
+.menu1>a>p{
+    cursor: pointer;
+}
+
+/*Corpo Página Principal*/
+
+.corpo1{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 800px;
+    background-image: url(imgs/fundoGif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+}
+
+.slogan>h1{
+    color: white;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.p2{
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/*Corpo2*/
+
+.pq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 70);
+    font-size: 50px;
+    height: 60px;
+}
+
+.corpoDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(0, 0, 70);
+}
+
+.corpoDesc>div{
+    margin: 20px;
+}
+
+.desc1{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc1>p{
+    margin-left: 25px;
+}
+
+.desc2{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc3{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc3>p{
+    margin-left: 25px;
+}
+
+.pDesc{
+    color: white;
+    font-size: 25px;
+}
+
+.imgDesc{
+    width: 500px;
+}
+
+
+.imgsCertificados{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 210px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgsCertificados>img{
+    width: 250px;
+    height: 110px;
+    margin: 10px;
+    cursor: pointer;
+}
+.subtitulo1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Transição */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Desce um pouco o elemento para o efeito */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Quando o elemento é visível */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Volta à posição original */
+}
+
+
+/*Rodapé*/
+
+.rodape{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    height: 380px;
+    background-color: rgb(6, 9, 46);
+    flex-direction: column;
+}
+
+.suporte{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.suporte>p{
+    display: flex;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.contato{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contato>img{
+    width: 80px;
+    cursor: pointer;
+}
+
+.emailSuporte{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+}
+
+/*Corpo Formulário*/
+
+.corpoForm{
+    background-image: url(imgs/formBackground.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpoForm>form>fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    margin: 10px;
+    color: white;
+}
+
+.corpoForm>form>fieldset>input{
+    border-radius:8px 8px;
+    border: solid white;
+    width: 300px;
+    height: 20px;
+    box-shadow: 0px 4px 6px rgb(35, 31, 31);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.corpoForm > form > fieldset > input:hover {
+    background-color: lightgray; 
+}
+
+#confirmar1{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(13, 22, 109);
+    color: white;
+    cursor: pointer;
+}
+
+#confirmar1:hover{
+    background-color: rgb(5, 10, 53);
+    color: lightgray;
+    border: solid lightgray;
+}
+
+#confirmar1:active {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(13, 22, 109);
+}
+
+#pais{
+    border-radius:8px 8px;
+    width: 200px;
+    box-shadow: 0px 4px 6px black;
+}
+
+/*Carreira*/
+
+.fundoCarreira{
+    background-image: url(imgs/backgroundCarreira.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+.progresso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000f;
+    width: 100%;
+    height: 500px;
+    font-size: 60px;
+    text-align: center;  
+}
+
+.progresso>h2 {
+    color: rgb(112, 29, 245);  
+}
+
+/*PAIXÃO INICIAL */
+
+.corpo2 {
+    width: 500px;
+    height: 400px;
+    border: 2px solid #abebbd;
+    margin-left: 30px;
+    margin-top: auto;
+}
+
+.corpo2>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.corpo2>p {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.corpo2>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #abebbd;
+}
+
+/*DESAFIOS INICIAS*/
+
+.corpo3 {
+    width: 500px;
+    height: 400px;
+    border: 2px solid #abebbd;
+    margin-left: 900px;
+    margin-top: auto;
+}
+
+.corpo3>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.corpo3>p {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.corpo3>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/*TALENTOS E CULTURA*/
+
+.corpo4 {
+    width: 530px;
+    height: 400px;
+    border: 2px solid #ffffff;
+    margin-left: 30px;
+    margin-top: auto;
+}
+
+.corpo4>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #46cd6e;
+}
+
+.corpo4>p {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #46cd6e;
+}
+
+.corpo4>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*INOVAÇÃO E CONSTANTE*/
+
+.corpo5 {
+    width: 530px;
+    height: 400px;
+    border: 2px solid #ffffff;
+    margin-left: 900px;
+    margin-top: auto;
+}
+
+.corpo5>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #46cd6e;
+}
+
+.corpo5>p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #46cd6e;
+}
+
+.corpo5>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*PARCERIAS ESTRATÉGICAS*/
+
+.corpo6 {
+    width: 500px;
+    height: 400px;
+    border: 2px solid #45bbff;
+    margin-left: 30px;
+    margin-top: auto;
+}
+
+.corpo6>h1 {
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #45bbff;
+
+}
+
+.corpo6>p {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #45bbff;
+}
+
+.corpo6>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*FOCO NO CLIENTE*/
+
+.corpo7 {
+    width: 500px;
+    height: 400px;
+    border: 2px solid #45bbff;
+    margin-left: 900px;
+    margin-top: auto;
+}
+
+.corpo7>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #45bbff;
+}
+
+.corpo7>p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #45bbff;
+}
+
+.corpo7>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*VERTICALIZAÇÃO*/
+
+.corpo8 {
+    width: 530px;
+    height: 400px;
+    border: 2px solid #a1dcff;
+    margin-left: 30px;
+    margin-top: auto;
+}
+
+.corpo8>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #a1dcff;
+
+}
+
+.corpo8>p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #a1dcff;
+}
+
+.corpo8>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*O TOPO E ALÉM*/
+
+.corpo9 {
+    width: 500px;
+    height: 400px;
+    border: 2px solid #a1dcff;
+    margin-left: 900px;
+    margin-top: auto;
+}
+
+.corpo9>h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: #a1dcff;
+}
+
+.corpo9>p {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #a1dcff;
+}
+
+.corpo9>hr{
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/Logo1.png" type="image/png">
+    <title>E-Tech Systems</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imgs/Logo1.png" alt="Logo E-Tech" onclick="window.location.href='etech.html'">
+        <p><a href="etech.html">E-Tech Systems</a></p>
+        <form class="formBotao1" action="contactenos.html">
+            <input class="botao1" type="submit" value="Contacte-nos">
+        </form>
+    </header>
+
+    <div class="menu1">
+        <a href="solucoes.html"><p>Soluções</p></a>
+        <a href="faleConosco.html"><p>Fale Conosco</p></a>
+        <a href="carreira.html"><p>Carreira</p></a>
+        <a href="clientes.html"><p>Clientes</p></a>
+    </div>
+
+    <div class="corpo1">
+        <div class="slogan">
+            <p class="p1">Desenvolvimento de</p>
+            <h1>Softwares Personalizados</h1>
+            <p class="p2">Criamos soluções de software sob medida, totalmente adaptadas às necessidades exclusivas do seu negócio.
+            <br><br>
+            Experimente a inovação e a personalização que fazem a diferença.</p>
+        </div>
+    </div>
+
+    <p class="pq">Por que nos contratar?</p>
+
+    <div class="corpoDesc">
+
+        <div class="desc1 hidden">
+            <img class="imgDesc" src="imgs/Rascunhodeimagem.png" alt="">
+            
+            <p class="pDesc">Oferecemos soluções personalizadas para
+                restaurantes, lanchonetes, food trucks e outros negócios
+                relacionados à alimentação. Simplifique suas operações e impulsione
+                suas vendas com nossos sistemas eficientes e intuitivos.</p>
+        </div>
+
+        <div class="desc2 hidden">
+            <p class="pDesc">Com nosso sistema você pode automatizar pedidos, gerenciar estoques,
+                integrar serviços de delivery e obter relatórios detalhados. Simplificamos
+                suas operações para que você possa se concentrar no que faz de melhor: servir seus clientes com eficiência e qualidade.</p>
+
+            <img class="imgDesc" src="imgs/standard.jpg" alt="">
+        </div>
+
+        <div class="desc3 hidden">
+            <img class="imgDesc" src="imgs/robot-handshake-human.jpg" alt="">
+
+            <p class="pDesc">Temos mais de 2000 clientes satisfeitos com nossos sistemas.<br>
+                 Cada feedback positivo nos motiva a continuar aprimorando nossas soluções e oferecendo o melhor suporte possível.<br>
+                 Agradecemos a confiança de todos os nossos clientes e estamos comprometidos em continuar superando suas expectativas!</p>
+        </div>
+
+    </div>
+
+    <div class="certificados">
+
+        <p class="pq">Certificados</p>
+
+        <div class="imgsCertificados hidden">        
+            <img src="imgs/selo1.png" onclick="window.location.href='https://sectigostore.com/page/cheap-sectigo-ssl-certificates/?mtm_source=google&mtm_medium=cpc&mtm_campaign=76309736333&mtm_content=sectigo&gad_source=1&gclid=EAIaIQobChMI6uLzwP_AiAMVblRIAB3rBQEPEAAYASAAEgI_I_D_BwE'" alt="">
+            <img src="imgs/selo2.png" onclick="window.location.href='https://www.ebit.com.br/'" alt="">
+            <img src="imgs/selo3.jpg" onclick="window.location.href='https://br.norton.com/'" alt="">
+        </div>
+
+    </div>
+
+    <div class="rodape">   
+        <div class="suporte">
+            <p>Suporte</p>
+            <p>Termos de Uso</p>
+            <p>Política e Privacidade</p>
+            <p>Política de Segurança</p>
+        </div>
+
+        <div class="contato">
+            <img src="imgs/pngWpp.png" alt="">
+            <img src="imgs/pngInsta.png" onclick="window.location.href='https://www.instagram.com/etech_systems/?igsh=MXdvc21pYjc5MHFxaw%3D%3D'" alt="">
+            <img src="imgs/pngFace.png" alt="">
+        </div>
+
+        <p class="emailSuporte">suporte@etechsys.com.br</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Remove o observador após a animação
+                    }
+                });
+            });
+    
+            // Seleciona todos os elementos que têm a classe 'hidden'
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach(element => {
+                observer.observe(element); // Observa cada elemento
+            });
+        });
+    </script>
+    
+</body>
+</html>

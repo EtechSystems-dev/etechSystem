@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+}
+
+/*Começo - Menu   */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 9, 46);
+    height: 70px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header>p{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: rgb(93, 184, 245);
+}
+
+.formBotao1{
+    display: flex;
+    align-items: center;
+}
+
+.botao1{
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    border: solid 3px white;
+    cursor: pointer;
+}
+
+.logo{
+    padding: 0%;
+    width: 200px;
+    height: 100px;
+    justify-content: flex-start;
+}
+
+.menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    background-color: white;
+    color: rgb(6, 9, 46);
+    font-size: 20px;
+}
+
+.menu1>a{
+    text-decoration: none;
+    color: rgb(6, 9, 46);
+}
+
+.menu1>a>p{
+    cursor: pointer;
+}
+
+/*Final - Menu */
+
+
+/*Clientes */
+
+.imginicial{
+    background-image: url(/imgs/backgrounds/Clientes.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    height: 600px;
+    margin: 25px;
+}
+
+.imginicial>h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 290px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+
+.clientes>div {
+    
+    
+    width: 195px;
+    height: 290px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.clientes>div>img{
+    width: 100%;
+
+}
